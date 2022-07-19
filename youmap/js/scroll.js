@@ -1,23 +1,20 @@
 
+window.addEventListener('scroll', scrollik);
+function scrollik() {
+    const your_div = document.getElementById('some_div');
+    console.log(your_div);
 
-// document.querySelector('.egg').onclick = function () {
-//     this.style.transform = `rotate(${this.d = (this.d | 0) + 90}deg)`;
-//   }
+    let vertical_position = pageYOffset;
+    console.log(vertical_position);
+    your_div.style.marginTop = (vertical_position+100) + 'px';
+    if(vertical_position > 1250){
+      // console.log('finish')
+      your_div.style.marginTop = (vertical_position+100) + 'px';
+      console.log('gffggf')
+      // your_div.style.marginTop = (vertical_position-100) + 'px';
+    } else if(vertical_position == 2060) {
+      your_div.style.marginTop = (vertical_position-200) + 'px';
+    }
+}
 
 
-// const phone = document.querySelector('.right_part_img');
-
-// window.addEventListener('scroll', animated);
-
-// function animated(){
-//     let posTop = window.pageYOffset;
-//     if(posTop == 0 || posTop < 300){
-//         console.log('dfdf');
-//         phone.style.transform = "translate(235%, -114px)";
-//     } else if (posTop > 301) {
-//         console.log('работает');
-//         phone.style.transform = `translate(235%, ${posTop+800}px)`
-//     }
-//     console.log(posTop);
-   
-// };
