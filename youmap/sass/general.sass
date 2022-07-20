@@ -1,49 +1,41 @@
 @import _resets
 @import _fonts
 @import _variables
-@import _ellipse
 @import _main
 body
     background-color: $black
     font-family: 'Golos Text' 
 .wrapper
     max-width: 1440px
-    margin:  0 auto
+    height: 100%
+    margin: auto
     // border: 1px solid red
     border-radius: 20px
     display: flex
     justify-content: center
 
-.header
-    
-    // background-image: url('../assets/bg/header-ellipse.jpg');
-    // background-position: center 
-    // background-repeat: no-repeat;
 .navigation
+    min-width: 1390px
     position: fixed
     top: 20px
     z-index: 10
     font-family: 'Golos Text' 
-    width: 1390px
-    height: 80px
+    min-height: 80px
     background-color: red
     display: flex
     justify-content: center
     border-radius: 28px
     background: rgba(30, 30, 30, 0.7)
-    // background: red
-    // margin-top: 20px
 
 
 .navigation_wrapper
     width: 97%
-    // margin: 0 auto
     display: flex
     justify-content: space-between
     align-items: center
     border-color: green
 .nav_item
-    width: 804px
+    width: 60%
     display: flex
     justify-content: space-between
     align-items: center
@@ -53,7 +45,7 @@ body
     display: flex
     justify-content: space-between
     align-items: center
-    width: 406px
+    width: 30%
     font-size: 16px
     color: $white
     
@@ -74,16 +66,25 @@ body
     // margin-top: -150px
     z-index: 1
     width: 100%
-.main
-    background-image: url('../assets/images/bg/1ViewPort.png');
-    border-radius: 28px
-    // background-position-y: 25%;
+    // background-image: url('../assets/images/bg/1ViewPort.png');
+    // border-radius: 28px
+    // background-position-y: 10%;
     background-repeat: no-repeat;
+
+
+
+//first block
+
+// .first_block
+//     background-image: url('../assets/images/bg/Ellipses.png')
+//     background-position-y: 105%
+//     background-position-x: center
+
 .wrapper_first_block
-    padding: 269px 72px 0px 72px
+    padding: 374px 72px 0px 72px
+    display: flex
 .first_block_content
     display: flex
-
 
 
 
@@ -97,11 +98,11 @@ body
 	top: 0px
 	opacity: 0
 	z-index: 1
-	// -webkit-transition: opacity 1s
-	// -moz-transition: opacity 1s
-	// -o-transition: opacity 1s
-	// transition: opacity 1s
-    // transition:  opacity 1s
+	-webkit-transition: opacity 1s
+	-moz-transition: opacity 1s
+	-o-transition: opacity 1s
+	transition: opacity 1s
+    transition:  opacity 1s
 
 .showing
 	opacity: 1
@@ -115,7 +116,6 @@ body
     font-size: 80px
     font-weight: 700
     color: $white
-
 
 .title_descr_first
     padding-top: 112px
@@ -145,7 +145,7 @@ body
     transform: translateY(28%)
 .img_goole_icons
     transform: translateY(30%)
-//     display: block
+
 .app_google_link
     display: block
     width: 183px
@@ -175,6 +175,13 @@ body
     background-repeat: no-repeat;
     transform: translate(236%, -18%)
     z-index: 100
+    // position: absolute
+    // top: 0px
+    // margin-top: 120px
+    // position: absolute
+    // background-repeat: no-repeat;
+    // transform: translate(236%, -18%)
+    z-index: 100
 
 .wrapper_content_block
     padding: 126px 159px;
@@ -188,14 +195,27 @@ body
     z-index: 1
     // padding-top: 74px
     padding-bottom: 59px   
-    
+
+.ellipse_one
+    position: absolute
+    transform: translate(26%, -50%)
+
+.ellipse_img_one
+    // display: block
+    // position: absolute
+    // // width: 300px
+    // // height: 300px
+    // position: relative
+    // top: -500px
+    // right: -58%
+
+
 .content_block_one
-    padding-top: 369px
-    background-image: url('../assets/images/bg/Ellipses-block1.png');
-    // background-position: right
-    background-repeat: no-repeat;
-    background-position-x: 191%;
-    background-position-y: 40%;
+    // background-image: url('../assets/images/bg/Ellipses-block1.png');
+    // // background-position: right
+    // // background-repeat: no-repeat;
+    // // background-position-x: center;
+    // background-position: 0% 0%
 .content_block_two
     // background-image: url('../assets/images/bg/Ellipses-block2.png');
     // // background-position: right
@@ -229,7 +249,16 @@ body
     width: 45%
 .ellipse_tree
     position: absolute
-    transform: translate(42%, -77%)
+    transform: translate(32%, -50%)
 .ellipse_two
     position: absolute
-    transform: translate(51%, -77%)
+    transform: translate(27%, -44%)
+.ellipse_first
+    position: absolute
+    transform: translate(15%, -52%)
+.ellipse_first_one
+    position: absolute
+    transform: translate(-32%, -63%)
+// .ellips_img_three
+//     width: 500px
+//     height: 500px

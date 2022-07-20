@@ -6,7 +6,7 @@ function nextSlide() {
     slides[currentSlide].className = 'slide_text';
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide_text showing';
-    if (currentSlide == 4) {
-    clearInterval(slideInterval);
-    }
+    // if (currentSlide == 4) {
+    // clearInterval(slideInterval);
+    // }
 }
