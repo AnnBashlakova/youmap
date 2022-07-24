@@ -48,15 +48,20 @@ body
     width: 30%
     font-size: 16px
     color: $white
-    
-    
-.btn_request
+.btn
     font-size: 16px
-    width: 165px
     height: 44px
     border-radius: 14px
     background-color: $blue-btn
     color: $white
+    
+.btn_request
+    width: 165px
+.btn_open_constructor
+    width: 244px
+    height: 55px
+    margin: 30px 0 30px 0
+    
     // font-family: 'Golos'
 .main
     margin-top: -100px
@@ -72,45 +77,37 @@ body
     background-repeat: no-repeat;
 
 
-
-//first block
-
-// .first_block
-//     background-image: url('../assets/images/bg/Ellipses.png')
-//     background-position-y: 105%
-//     background-position-x: center
-
-.wrapper_first_block
+.wrapper_block
     padding: 374px 72px 0px 72px
     display: flex
 .first_block_content
     display: flex
 
 
-
+    
 #text_change_slides
-	position: relative
     font-size: 80px
-
+    display: block
+    height: 100px
+    width: 500px
+    overflow: hidden
+    // background-color: pink
 .slide_text
-	position: absolute
-	left: 0px
-	top: 0px
-	opacity: 0
-	z-index: 1
-	-webkit-transition: opacity 1s
-	-moz-transition: opacity 1s
-	-o-transition: opacity 1s
-	transition: opacity 1s
-    transition:  opacity 1s
+    position: relative
+    display: block
+    text-align: left
+    width: 400px
+    height: 100px
+    // background-color: trans
+    transition: transform 0.5s ease-in-out
+    // transition: opacity 3s
 
-.showing
-	opacity: 1
-	z-index: 2
 
 .title
     display: flex
     flex-direction: column
+.title_block
+    z-index: 10
 
 .title_block, .slide_text
     font-size: 80px
@@ -118,7 +115,7 @@ body
     color: $white
 
 .title_descr_first
-    padding-top: 112px
+    padding-top: 10px
     width: 64%
     line-height: 30px
     font-size: 20px
@@ -170,10 +167,13 @@ body
     // background-position-y: 87%;
     // background-position-x: -157%;
 .right_part_img
-    margin-top: 120px
-    position: absolute
-    background-repeat: no-repeat;
-    transform: translate(236%, -18%)
+    // position: relative
+    // transform: translateY(-18%)
+    // margin-top: 120px
+    // position: fixed
+    // transform: translateY(236%, 361%)
+    // background-repeat: no-repeat;
+    // transform: translate(236%, -18%)
     z-index: 100
     // position: absolute
     // top: 0px
@@ -182,6 +182,13 @@ body
     // background-repeat: no-repeat;
     // transform: translate(236%, -18%)
     z-index: 100
+.stick
+    position: fixed
+    transform: translate(236%, -18%)
+.position
+    position: absolute
+    transform: translate(236%, 304%);
+    
 
 .wrapper_content_block
     padding: 126px 159px;
@@ -262,3 +269,15 @@ body
 // .ellips_img_three
 //     width: 500px
 //     height: 500px
+
+.made_maps
+    margin-bottom: 100px
+.wrapper_block_made_maps
+    display: flex
+    flex-direction: column
+    align-items: center
+.subheader_content_block_made_maps
+    text-align: center
+    width: 50%
+.made_maps_display
+    padding-bottom: 100px
