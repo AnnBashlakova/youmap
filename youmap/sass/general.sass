@@ -106,7 +106,7 @@ body
     height: 100px
     // background-color: trans
     transition: transform 0.5s ease-in-out
-    // transition: opacity 3s
+    // transition: opacity 0.5s ease-in-out
 
 
 .title
@@ -343,19 +343,74 @@ body
         transform: translate(calc(0px - var(--itemWidth)))
     
 
+@keyframes infinityAnimation_revers
+    0%
+        transform: translate(calc(0px - var(--itemWidth)))
+    
+    100%
+        transform: translate(0);
+    
 .animation_wrapper
     max-width: 1440px
     overflow: hidden;
     border: 1px solid;
-    --itemWidth: 105px;
+    --itemWidth: 35%;
 
 
 .text_wrapper
     display: flex;
-    animation: infinityAnimation 4s linear infinite
+    padding-bottom: 20px
+    
 
+
+.text_wrapper_one
+    animation: infinityAnimation 20s linear infinite
+
+.text_wrapper_two
+    animation: infinityAnimation_revers 20s cubic-bezier(0.11,.084,.81,0.11) infinite
+
+.text_wrapper_three
+    animation: infinityAnimation 16s ease-in-out infinite
+.text_wrapper_four
+    animation: infinityAnimation_revers 16s ease-in-out infinite
 
 .text_item
-    padding: 10px;
+    color: $white
+    text-align: center
     flex-shrink: 0;
+    padding: 40px 30px
+    margin: 0 20px
+    border-radius: 24px
     width: var(--itemWidth);
+    font-weight: 400
+    font-size: 22px
+    border: 1px solid
+    align-items: center
+.text_item_one:nth-child(2n+1)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_one:nth-child(2n+2)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_one:nth-child(3)
+    border-color: $pink-boder  
+    background-color: $pink-text-item
+
+.text_item_two:nth-child(2n+1)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_two:nth-child(2n+2)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_two:nth-child(3)
+    border-color: $green-boder
+    background-color: $green-text-item
+
+.text_item_three:nth-child(2n+1)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_three:nth-child(2n+2)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_three:nth-child(3)
+    border-color: $blue-boder
