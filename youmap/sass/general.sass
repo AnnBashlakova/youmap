@@ -41,6 +41,12 @@ body
     align-items: center
     color: $white
     font-size: 18px
+.nav_item_deviders
+    display: block
+    height: 24px
+    width: 2px
+    background-color: rgba(255, 255, 255, 0.08);
+
 .nav_request
     display: flex
     justify-content: space-between
@@ -100,7 +106,7 @@ body
     height: 100px
     // background-color: trans
     transition: transform 0.5s ease-in-out
-    // transition: opacity 3s
+    // transition: opacity 0.5s ease-in-out
 
 
 .title
@@ -201,7 +207,7 @@ body
 .content_block_three
     z-index: 1
     // padding-top: 74px
-    padding-bottom: 59px   
+    padding-bottom: 159px   
 
 .ellipse_one
     position: absolute
@@ -271,13 +277,140 @@ body
 //     height: 500px
 
 .made_maps
-    margin-bottom: 100px
+    // margin-bottom: 100px
 .wrapper_block_made_maps
+    margin-top: 100px
+    padding: 150px 72px 100px 72px
     display: flex
     flex-direction: column
     align-items: center
+    background-image: url('../assets/images/bg/Frame414.png');
+    background-position: center
+    background-repeat: no-repeat;
 .subheader_content_block_made_maps
     text-align: center
     width: 50%
-.made_maps_display
-    padding-bottom: 100px
+
+
+.wrapper_block_why_choose
+    padding: 0px 72px 0px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+.subheader_content_block_why_choose
+    text-align: center
+    padding-bottom: 67px
+.why_choose_animation_cards
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    padding-bottom: 84px
+.animation_card
+    width: 418px
+.animation_img
+    background-image: url('../assets/images/bg/animation-bg.png');
+    background-position: center
+    background-repeat: no-repeat;
+    height: 254px
+    width: 100%
+.animation_title
+    margin-top: 12px
+    margin-bottom: 12px
+    text-align: left
+    font-size: 26px
+    color: $white
+    font-weight: 600
+.animation_description
+    width: 95%
+    font-size: 20px
+    color: $white
+    font-weight: 400
+    line-height: 30px
+.subheader_content_block_helps
+    padding: 40px 0 
+    text-align: center
+    width: 63%
+    font-size: 50px
+
+
+
+/*Infinity animation*/
+@keyframes infinityAnimation 
+    0%
+        transform: translate(0);
+    
+    100%
+        transform: translate(calc(0px - var(--itemWidth)))
+    
+
+@keyframes infinityAnimation_revers
+    0%
+        transform: translate(calc(0px - var(--itemWidth)))
+    
+    100%
+        transform: translate(0);
+    
+.animation_wrapper
+    max-width: 1440px
+    overflow: hidden;
+    border: 1px solid;
+    --itemWidth: 35%;
+
+
+.text_wrapper
+    display: flex;
+    padding-bottom: 20px
+    
+
+
+.text_wrapper_one
+    animation: infinityAnimation 20s linear infinite
+
+.text_wrapper_two
+    animation: infinityAnimation_revers 20s cubic-bezier(0.11,.084,.81,0.11) infinite
+
+.text_wrapper_three
+    animation: infinityAnimation 16s ease-in-out infinite
+.text_wrapper_four
+    animation: infinityAnimation_revers 16s ease-in-out infinite
+
+.text_item
+    color: $white
+    text-align: center
+    flex-shrink: 0;
+    padding: 40px 30px
+    margin: 0 20px
+    border-radius: 24px
+    width: var(--itemWidth);
+    font-weight: 400
+    font-size: 22px
+    border: 1px solid
+    align-items: center
+.text_item_one:nth-child(2n+1)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_one:nth-child(2n+2)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_one:nth-child(3)
+    border-color: $pink-boder  
+    background-color: $pink-text-item
+
+.text_item_two:nth-child(2n+1)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_two:nth-child(2n+2)
+    border-color: $blue-boder
+    background-color: $blue-text-item
+.text_item_two:nth-child(3)
+    border-color: $green-boder
+    background-color: $green-text-item
+
+.text_item_three:nth-child(2n+1)
+    border-color: $green-boder
+    background-color: $green-text-item
+.text_item_three:nth-child(2n+2)
+    border-color: $pink-boder
+    background-color: $pink-text-item
+.text_item_three:nth-child(3)
+    border-color: $blue-boder
