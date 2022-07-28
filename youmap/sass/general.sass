@@ -21,7 +21,7 @@ body
     z-index: 10
     font-family: 'Golos Text' 
     min-height: 80px
-    background-color: red
+    // background-color: red
     display: flex
     justify-content: center
     border-radius: 28px
@@ -242,11 +242,13 @@ body
 //     background-position-x: 191%;
 //     background-position-y: 35%;
 .subheader_content_block
-    width: 55%
+    width: 57%
     color: $white
     font-size: 48px
     font-weight: 600
     line-height: 54px
+.subheader_content_block_three
+    width: 64%
 .title_descr_block1
     width: 32%
     padding-top: 18px
@@ -257,9 +259,9 @@ body
     // background-position-x: 191%;
     // background-position-y: 20%;
 .title_descr_block2
-    width: 57%
+    width: 49%
 .title_descr_block3
-    width: 45%
+    width: 62%
 .ellipse_tree
     position: absolute
     transform: translate(32%, -50%)
@@ -279,7 +281,7 @@ body
 .made_maps
     // margin-bottom: 100px
 .wrapper_block_made_maps
-    margin-top: 100px
+    margin-top: 140px
     padding: 150px 72px 100px 72px
     display: flex
     flex-direction: column
@@ -327,7 +329,7 @@ body
     font-weight: 400
     line-height: 30px
 .subheader_content_block_helps
-    padding: 40px 0 
+    padding: 50px 0 
     text-align: center
     width: 63%
     font-size: 50px
@@ -353,7 +355,7 @@ body
 .animation_wrapper
     max-width: 1440px
     overflow: hidden;
-    border: 1px solid;
+    // border: 1px solid;
     --itemWidth: 35%;
 
 
@@ -414,3 +416,147 @@ body
     background-color: $pink-text-item
 .text_item_three:nth-child(3)
     border-color: $blue-boder
+    background-color: $blue-text-item
+
+
+
+.wrapper_block_why_choose_projects
+    margin-top: 140px
+.subheader_content_projects
+    text-align: center
+    font-size: 56px
+    font-weight: 700
+    padding-bottom: 55px
+.wrapper_projects_example
+    padding-bottom: 96px
+.slider_projects_example
+    display: flex
+    gap: 20px
+
+
+
+
+.carousel 
+    position: relative;
+    width: 638px;
+    height: 406px;
+    border-radius: 26px
+    background-color: rgba(24, 25, 27, 0.6)
+    
+
+
+.carousel_track-container
+    overflow: hidden
+    width: 100%;
+    height: 100%;
+
+
+.carousel_track 
+    position: relative;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+.carousel_slide,
+    .carousel_image 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+
+.carousel_slide 
+    // padding: 5% 12% 8%;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+
+
+.carousel_slide.is-selected 
+    transform: translateX(0);
+
+
+.carousel_slide.is-selected ~ .carousel_slide 
+    transform: translateX(100%)
+
+
+.carousel_image 
+    z-index: -1;
+
+
+
+.carousel_image > img 
+    // display: block;
+    width: 94%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 26px
+
+
+.carousel_title 
+    font-size: 28px;
+    font-weight: 500
+    color: #fff;
+    text-align: left
+    padding-left: 50px
+
+
+.carousel_btn,
+.carousel_dot 
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+
+
+.carousel_btn 
+    position: absolute;
+    top: 52%;
+    background-color:  rgba(42, 48, 57, 1);
+    // transform: translateY(-30%);
+    width: 48px
+    height: 48px
+    border-radius: 12px
+
+
+// .carousel_btn:focus,
+// .carousel_dot:focus,
+// .carousel_btn:active,
+// .carousel_dot:active 
+//     outline: none
+
+  .carousel_btn > * 
+    pointer-events: none;
+
+
+.carousel_btn svg 
+    fill: var(--color-default-state);
+    // transform-origin: center;
+    transition: fill .2s;
+
+
+.carousel_btn:hover svg 
+    fill: var(--color-active-state);
+
+.jsPrev 
+    left: 50px;
+
+
+.jsNext 
+    right: 50px;
+
+
+.jsPrev
+    transform: rotate(-180deg);
+
+
+// .jsNext svg 
+//     transform: rotate(90deg);

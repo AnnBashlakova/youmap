@@ -28,7 +28,7 @@ window.addEventListener('scroll', scrollPhone);
 function scrollPhone() {
     let vertical_position = pageYOffset;
     // console.log(vertical_position);
-    if(vertical_position > 2510){
+    if(vertical_position > 2410){
         console.log('dfvdfdf');
         phone.classList.remove('stick');
         phone.classList.add('position');
