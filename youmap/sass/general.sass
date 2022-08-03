@@ -926,25 +926,26 @@ select
 
 .wrapper_block_we-know
     display: flex
-    padding: 0px 72px
+    padding: 0px 72px 50px
     background-image: url('../assets/images/bg/line-road.png')
     background-position-x: center;
-    background-position-y: 12%;
+    background-position-y: -80%;
     background-repeat: no-repeat;
     // display: flex
     // flex-direction: column
     // align-items: center
 .road-plan
-    padding-top: 430px
+    padding-top: 384px
     position: relative
     // top: 430px
-    right: 126px
+    right: 146px
+
 .road-plan-item::before
     content: ""
     position: absolute
     // top: 10%
-    left: -72px
-    transform: translate(0 , -50%)
+    left: -52px
+    transform: translate(0 , 5%)
     width: 32px
     height: 32px
     border-radius: 50%
@@ -956,12 +957,24 @@ select
 .header_we-know
     padding-top: 310px
 .road-plan-item
-    padding-bottom: 72px
+    padding-bottom: 75px
 .description_text-we-know
     width: 62%
 .text-plan
+    font-size: 20px
     color: $white
     text-align: left
     padding-bottom: 16px
 .btn-plan
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 72px
     width: 424px
+.btn-plan-purple
+    background: rgba(83, 56, 175, 1);
+.btn-plan-green
+    background: rgba(11, 164, 89, 1);
+
+.btn-plan-blue
+    background: rgba(0, 140, 222, 1);
