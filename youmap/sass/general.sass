@@ -1,10 +1,85 @@
 @import _resets
 @import _fonts
 @import _variables
-@import _main
+// @import _main
+
 body
     background-color: $black
     font-family: 'Golos Text' 
+
+
+
+//header
+
+.header
+    margin: 0 auto
+    max-width: 1440px
+    display: block
+    height: 100px
+    background-color: #fff
+
+
+.navigation__wrapper
+    display: flex
+    justify-content: center
+
+
+.navigation
+    position: fixed
+    top: 20px
+    z-index: 200
+    font-family: 'Golos Text' 
+    min-height: 80px
+    display: flex
+    justify-content: space-between
+    gap: 151px
+    border-radius: 28px
+    background: rgba(30, 30, 30, 0.7)
+    
+
+.nav__item
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    align-items: center
+    color: $white
+    font-size: 16px
+    padding-left: 20px
+.nav__item > li > img
+    margin-right: 12px
+
+.nav_item-deviders
+    margin: 0 24px
+    display: block
+    height: 24px
+    width: 2px
+    background-color: rgba(255, 255, 255, 0.08);
+
+.nav__request
+    padding-right: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 22px
+    font-size: 16px
+    color: $white
+.btn
+    font-size: 16px
+    height: 44px
+    border-radius: 14px
+    background-color: $blue-btn
+    color: $white
+    
+.btn__request
+    width: 165px
+
+
+.btn_open_constructor
+    width: 244px
+    height: 55px
+    margin: 30px 0 30px 0
+    
+//main
 .wrapper
     max-width: 1440px
     height: 100%
@@ -21,7 +96,7 @@ body
     z-index: 10
     font-family: 'Golos Text' 
     min-height: 80px
-    background-color: red
+    // background-color: red
     display: flex
     justify-content: center
     border-radius: 28px
@@ -84,7 +159,7 @@ body
 
 
 .wrapper_block
-    padding: 374px 72px 0px 72px
+    padding: 374px 72px 0px 152px
     display: flex
 .first_block_content
     display: flex
@@ -190,20 +265,20 @@ body
     z-index: 100
 .stick
     position: fixed
-    transform: translate(236%, -18%)
+    transform: translate(210%, -18%)
 .position
     position: absolute
-    transform: translate(236%, 304%);
+    transform: translate(210%, 290%);
     
 
 .wrapper_content_block
     padding: 126px 159px;
 .content_block_one
-    padding-bottom: 200px
+    padding-bottom: 80px
 .content_block_two
     z-index: 1
     padding-top: 74px
-    padding-bottom: 272px
+    padding-bottom: 145px
 .content_block_three
     z-index: 1
     // padding-top: 74px
@@ -224,6 +299,7 @@ body
 
 
 .content_block_one
+    padding-top: 120px
     // background-image: url('../assets/images/bg/Ellipses-block1.png');
     // // background-position: right
     // // background-repeat: no-repeat;
@@ -242,11 +318,13 @@ body
 //     background-position-x: 191%;
 //     background-position-y: 35%;
 .subheader_content_block
-    width: 55%
+    width: 57%
     color: $white
     font-size: 48px
     font-weight: 600
     line-height: 54px
+.subheader_content_block_three
+    width: 64%
 .title_descr_block1
     width: 32%
     padding-top: 18px
@@ -257,9 +335,9 @@ body
     // background-position-x: 191%;
     // background-position-y: 20%;
 .title_descr_block2
-    width: 57%
+    width: 49%
 .title_descr_block3
-    width: 45%
+    width: 62%
 .ellipse_tree
     position: absolute
     transform: translate(32%, -50%)
@@ -279,7 +357,7 @@ body
 .made_maps
     // margin-bottom: 100px
 .wrapper_block_made_maps
-    margin-top: 100px
+    margin-top: 250px
     padding: 150px 72px 100px 72px
     display: flex
     flex-direction: column
@@ -293,13 +371,14 @@ body
 
 
 .wrapper_block_why_choose
-    padding: 0px 72px 0px 72px
+    padding: 130px 72px 0px 72px
     display: flex
     flex-direction: column
     align-items: center
 .subheader_content_block_why_choose
+    font-size: 56px
     text-align: center
-    padding-bottom: 67px
+    padding-bottom: 57px
 .why_choose_animation_cards
     display: flex
     justify-content: space-between
@@ -327,7 +406,7 @@ body
     font-weight: 400
     line-height: 30px
 .subheader_content_block_helps
-    padding: 40px 0 
+    padding: 50px 0 
     text-align: center
     width: 63%
     font-size: 50px
@@ -353,7 +432,7 @@ body
 .animation_wrapper
     max-width: 1440px
     overflow: hidden;
-    border: 1px solid;
+    // border: 1px solid;
     --itemWidth: 35%;
 
 
@@ -378,7 +457,7 @@ body
     color: $white
     text-align: center
     flex-shrink: 0;
-    padding: 40px 30px
+    padding: 28px 20px
     margin: 0 20px
     border-radius: 24px
     width: var(--itemWidth);
@@ -414,3 +493,664 @@ body
     background-color: $pink-text-item
 .text_item_three:nth-child(3)
     border-color: $blue-boder
+    background-color: $blue-text-item
+
+
+
+.wrapper_block_why_choose_projects
+    margin-top: 0px
+.subheader_content_projects
+    text-align: center
+    font-size: 56px
+    font-weight: 700
+    padding-bottom: 55px
+.wrapper_projects_example
+    padding-bottom: 96px
+.slider_projects_example
+    display: flex
+    gap: 20px
+
+
+
+
+.carousel 
+    position: relative;
+    width: 638px;
+    height: 406px;
+    border-radius: 26px
+    background-color: rgba(24, 25, 27, 0.6)
+    
+
+
+.carousel_track-container
+    overflow: hidden
+    width: 100%;
+    height: 100%;
+
+
+.carousel_track 
+    position: relative;
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+.carousel_slide,
+    .carousel_image 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+
+.carousel_slide 
+    // padding: 5% 12% 8%;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: transform .3s ease-out;
+
+
+.carousel_slide.is-selected 
+    transform: translateX(0);
+
+
+.carousel_slide.is-selected ~ .carousel_slide 
+    transform: translateX(100%)
+
+
+.carousel_image 
+    z-index: -1;
+
+
+
+.carousel_image > img 
+    // display: block;
+    width: 94%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 26px
+
+
+.carousel_title 
+    font-size: 28px;
+    font-weight: 500
+    color: #fff;
+    text-align: left
+    padding-left: 50px
+
+
+.carousel_btn,
+.carousel_dot 
+    z-index: 1;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+
+
+.carousel_btn 
+    position: absolute;
+    top: 52%;
+    background-color:  rgba(42, 48, 57, 1);
+    // transform: translateY(-30%);
+    width: 48px
+    height: 48px
+    border-radius: 12px
+
+
+// .carousel_btn:focus,
+// .carousel_dot:focus,
+// .carousel_btn:active,
+// .carousel_dot:active 
+//     outline: none
+
+  .carousel_btn > * 
+    pointer-events: none;
+
+
+.carousel_btn svg 
+    fill: var(--color-default-state);
+    // transform-origin: center;
+    transition: fill .2s;
+
+
+.carousel_btn:hover svg 
+    fill: var(--color-active-state);
+
+.jsPrev 
+    left: 50px;
+
+
+.jsNext 
+    right: 50px;
+
+
+.jsPrev
+    transform: rotate(-180deg);
+.our-price
+    padding-bottom: 160px
+.wrapper_block_our-price
+    padding: 130px 72px 0px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.subheader_content_our-price
+    padding-bottom: 25px
+    font-size: 56px
+    // width: 50%
+    text-align: center
+// .jsNext svg 
+//     transform: rotate(90deg);
+.description_text
+    width: 52%
+    font-size: 20px
+    color: $white
+    font-weight: 400
+    text-align: center
+    line-height: 30px
+    
+
+.tarif-cards
+    padding-top: 50px
+    display: flex
+    gap: 20px
+    align-items: center
+    justify-content: center
+.tarif_card-wrapper
+    padding: 20px
+.tarif_name-title
+    font-size: 20px
+    color: $white
+    font-weight: 500
+    transform: translateY(17%)
+.tarif_card-item, .tarif_card-title
+    display: flex
+    flex-direction: column
+.tarif_card-item
+    position: relative
+    border: 3px solid rgba(255, 255, 255, 0.1)
+    height: 812px
+    width: 30%
+    background: linear-gradient(0deg, rgba(22, 23, 27, 0.8), rgba(22, 23, 27, 0.8))
+    border-radius: 40px
+.tarif_name-dates
+    font-size: 17px
+    font-weight: 500
+    padding: 6px 15px 8px 15px
+.name-dates-green
+    color: $green-text-tarif
+    border-radius: 24px
+    background-color: $green-backround-tarif
+
+.name-dates-blue
+    color: $blue-text-tarif
+
+    background-color: $blue-backround-tarif
+
+    border-radius: 24px
+.name-dates-pink
+    color: $pink-text-tarif
+    background-color: $pink-backround-tarif
+    border-radius: 24px
+.tarif_name
+    display: flex
+    justify-content: space-between
+    vertical-align: center
+    padding: 22px 20px 40px 26px
+    width: 85%
+.tarif_card-title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: rgba(255, 255, 255, 0.05)
+    border-radius: 28px
+    height: 33%
+    margin: 20px 20px 10px 20px
+.tarif_line
+    margin-top: -36px
+    height: 1px
+    background-color: rgba(255, 255, 255, 0.1)
+    width: 100%
+    
+.tarif_coast
+    margin-top: 30px
+.tarif_coast, .tarif_coast-second,  .tarif_coast-third
+    font-size: 56px
+    color: $white
+    font-weight: 600
+    letter-spacing: 2px
+    
+.tarif-coast-descriotin
+    color: rgba(255, 255, 255, 0.85)
+    padding-bottom: 35px
+    line-height: 22px
+    font-size: 18px
+    font-weight: 300
+    width: 60%
+    text-align: center
+
+.tarif_list
+    color: $white
+    font-size: 18px
+    line-height: 24px
+    // padding-top: 20px
+
+.tarif_list-item
+    position: relative
+    padding-bottom: 22px
+    text-align: left
+    padding-left: 82px
+
+.tarif_list-item::before
+    content: ""
+    position: absolute
+    top: 29%
+    left: 51px
+    transform: translate(0 , -50%)
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background-color: rgba(57, 125, 226, 1)
+
+
+.btn-cont 
+    width: 100%;
+    height: 68px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.tarif_btn
+    height: 68px;
+    width: 378px;
+    padding: 20px 40px 24px 40px
+    font-size: 20px
+    color: rgba(255, 255, 255, 0.75)
+    background: rgba(12, 117, 241, 0.2)
+.btn-color
+    background: rgba(12, 117, 241, 1)
+    color: $white
+.tarif_coast-second::after
+    content: "₽"
+    font-weight: 200
+    font-family: 'Golos Text'
+    font-size: 28px
+    position: relative
+    top: -20px
+
+.price-item
+    // 
+    position: relative
+    top: 12px
+    font-size: 17px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.4);
+
+.tarif_coast-item
+    display: flex
+    width: 62%
+    // position: relative
+    justify-content: space-between
+.tarif_coast-item-third
+    display: flex
+    width: 90%
+    // position: relative
+    justify-content: space-between
+.tarif-line
+    width: 1px
+    height: 55px
+    transform: rotate(18deg)
+    background-color: rgba(255, 255, 255, 0.1)
+
+.tarif-plus
+    position: relative
+    top: 7px
+    font-size: 44px
+    color: $white
+    font-weight: 500
+.tarif_card-color-boder
+    position: relative
+    border: none
+    border-radius: 40px
+    background-color: $black
+    box-shadow: 2px 2px 20px 0px rgba(12, 117, 241, 0.12)
+
+.tarif_card-color-boder::before 
+    border-radius: 40px
+    width: 100%
+    height: 100%
+    content: '';
+    background-image: linear-gradient(149.16deg, rgba(12, 117, 241, 0.45) 0%, rgba(6, 231, 117, 0.45) 48.44%,rgba(85, 47, 218, 0.45) 100%);
+    padding: 6px;
+    top: -6px;
+    left: -6px;
+    position: absolute;
+    z-index: -1;
+
+
+.wrapper_block_request
+    padding: 54px 72px 92px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.questions-and-app
+    width: 100%
+    // margin-top: 56px
+    padding-top: 56px
+    display: flex
+    justify-content: space-between
+    gap: 20px
+
+.questions_wrapper
+    width: 55%
+    padding: 40px
+    background-color: rgba(22, 23, 27, 0.8)
+
+    border-radius: 48px
+    border: 3px solid rgba(255, 255, 255, 0.08)
+.form-questions_title
+    text-align: left
+    font-size: 40px
+    color: $white
+.form-questions_descr
+    color: rgba(222, 222, 222, 1)
+    width: 92%
+    text-align: left
+    padding-bottom: 30px
+    padding-top: 20px
+.questions
+    display: flex
+    flex-direction: column
+
+.select-css, .input-question, .textare-question
+    display: block; 
+    font-size: 18px;
+    height: 80px 
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.6);
+    padding: .6em 1.4em .5em 1.8em; 
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+    border: none
+    border-radius: 12px
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.06);
+    margin-bottom: 16px
+.textare-question
+    padding-top: 20px
+    resize: none
+
+select
+    font-size: 18px; 
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.6);
+.questions_btn
+    height: 78px
+    font-size: 20px
+
+.app_wrapper
+    display: flex
+    flex-direction: column
+    position: relative
+    padding: 40px
+    width: 50%
+    // width: 55%
+    padding: 40px
+    background-color: rgba(22, 23, 27, 0.8)
+    border-radius: 48px
+    border: 3px solid rgba(255, 255, 255, 0.08)
+.apps_icons-form
+    position: absolute;
+    bottom: 40px;
+    z-index: 100
+.ellipse-apps
+    position: absolute
+    transform: translate(-10%, -1%)
+    z-index: 0
+    width: 60%
+    
+
+
+.wrapper_block_we-know
+    display: flex
+    padding: 0px 72px 50px
+    background-image: url('../assets/images/bg/line-road.png')
+    background-position-x: center;
+    background-position-y: -80%;
+    background-repeat: no-repeat;
+    // display: flex
+    // flex-direction: column
+    // align-items: center
+.road-plan
+    padding-top: 384px
+    position: relative
+    // top: 430px
+    right: 146px
+
+.road-plan-item::before
+    content: ""
+    position: absolute
+    // top: 10%
+    left: -52px
+    transform: translate(0 , 5%)
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    background-color: rgba(222, 222, 222, 1)
+.subheader_we-know
+    padding-top: 30px
+    font-size: 42px
+    width: 65%
+.header_we-know
+    padding-top: 310px
+.road-plan-item
+    padding-bottom: 75px
+.description_text-we-know
+    width: 62%
+.text-plan
+    font-size: 20px
+    color: $white
+    text-align: left
+    padding-bottom: 16px
+.btn-plan
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 72px
+    width: 424px
+.btn-plan-purple
+    background: rgba(83, 56, 175, 1);
+.btn-plan-green
+    background: rgba(11, 164, 89, 1);
+
+.btn-plan-blue
+    background: rgba(0, 140, 222, 1);
+
+
+.wrapper_block_answer
+    padding: 0px 72px 70px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.subheader_content_answer
+    width: 62%
+    text-align: center
+    font-size: 56px
+
+
+
+
+.accordeon-answer_container
+    // height: 1000px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+.accordion 
+    width: 1096px
+    // width: 100%;
+    // max-height: 100%;
+    // padding: 30px;
+    margin-inline: 20px;
+    
+    border-radius: 20px;
+
+
+.accordion__content 
+    margin-bottom: 40px;
+    padding-bottom: 30px
+    color: $white
+    font-size: 20px
+    font-weight: 500
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+.question 
+    display: flex;
+    // justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    transition: font-size 0.3s;
+
+// .accordion__content::after 
+//     // right: -300px
+//     content: "+";
+//     transition: 0.3s;
+// .question::after 
+//     position: relative
+//     right: -300px
+//     content: "+"; 
+//     transition: 0.3s;
+.img-plus
+    width: 20.83px
+    height: 20.83px
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    border-radius: 50%
+    transition: 0.5s
+.accordion__conteiner
+    display: flex
+    justify-content: space-between
+.answer 
+    height: 0;
+    font-size: 18px
+    font-weight: 400
+    color: rgba(222, 222, 222, 1);
+
+    overflow: hidden;
+    transition: 0.3s;
+
+// /* ========================CSS for JS */
+
+.accordion__content.active .answer 
+    height: 80px;
+
+.accordion__content.active .question 
+    font-size: 18px;
+
+.accordion__content.active .img-plus
+    transform: rotate(180deg)
+
+
+.wrapper-footer
+    padding: 40px 72px 20px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+    // justify-content: space-between
+    // width: 100%
+.footer-under
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90%
+.footer
+    z-index: -1
+    position: relative;
+    margin-top: 60px
+    background: #404040
+    border-radius: 56px
+    transition: background 2s ease-out 100ms
+// .footer:hover
+//     background: pink
+    // background: linear-gradient(149.16deg, rgba(12, 117, 241, 0.45) 0%, rgba(6, 231, 117, 0.45) 48.44%, rgba(85, 47, 218, 0.45) 100%);
+
+
+.footer::before 
+    position: absolute;
+    content: "";
+    top: 0;
+    border-radius: 56px
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,hsl(211, 100%, 50%),hsl(179, 100%, 30%))
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+
+.footer:hover::before 
+    opacity: 1
+
+    
+.footer-under
+    width: 100%
+    display: flex
+    padding-bottom: 40px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.footer_right-part
+    align-items: center
+    text-align: right
+
+.email-info
+    font-size: 40px
+    font-weight: 500
+    color: $white
+    padding-bottom: 20px
+.footer-descr
+    font-size: 18px
+    font-weight: 400
+    color: $white
+.footer-description_app
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.8);
+.footer-above
+    display: flex
+    justify-content: space-between
+    width: 100%
+.footer_year, .footer_politic
+    padding-top: 20px
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.75);
+    align-items: center
+.footer_politic
+    gap: 30px
+.footer_year
+    gap: 12px
+
+
+.footer_year-dot
+    width: 1px
+    height: 1px
+    background: rgba(255, 255, 255, 0.75);
+.app-footer
+    background: rgba(31, 31, 31, 0.6);

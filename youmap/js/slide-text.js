@@ -28,7 +28,7 @@ window.addEventListener('scroll', scrollPhone);
 function scrollPhone() {
     let vertical_position = pageYOffset;
     // console.log(vertical_position);
-    if(vertical_position > 2510){
+    if(vertical_position > 2410){
         console.log('dfvdfdf');
         phone.classList.remove('stick');
         phone.classList.add('position');
@@ -41,3 +41,14 @@ function scrollPhone() {
         // phone.classList.add('pos');
     }
 };
+
+
+const accordionContents = document.getElementsByClassName("accordion__content");
+for (i = 0; i < accordionContents.length; i++) {
+    accordionContents[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    });
+}
+
+
+// const plus = document.getElementsByClassName("img-plus");
