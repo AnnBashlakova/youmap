@@ -982,7 +982,7 @@ select
 
 
 .wrapper_block_answer
-    padding: 0px 72px 0px 72px
+    padding: 0px 72px 70px 72px
     display: flex
     flex-direction: column
     align-items: center
@@ -1065,3 +1065,92 @@ select
 
 .accordion__content.active .img-plus
     transform: rotate(180deg)
+
+
+.wrapper-footer
+    padding: 40px 72px 20px 72px
+    display: flex
+    flex-direction: column
+    align-items: center
+    // justify-content: space-between
+    // width: 100%
+.footer-under
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 90%
+.footer
+    z-index: -1
+    position: relative;
+    margin-top: 60px
+    background: #404040
+    border-radius: 56px
+    transition: background 2s ease-out 100ms
+// .footer:hover
+//     background: pink
+    // background: linear-gradient(149.16deg, rgba(12, 117, 241, 0.45) 0%, rgba(6, 231, 117, 0.45) 48.44%, rgba(85, 47, 218, 0.45) 100%);
+
+
+.footer::before 
+    position: absolute;
+    content: "";
+    top: 0;
+    border-radius: 56px
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right,hsl(211, 100%, 50%),hsl(179, 100%, 30%))
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+
+.footer:hover::before 
+    opacity: 1
+
+    
+.footer-under
+    width: 100%
+    display: flex
+    padding-bottom: 40px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.footer_right-part
+    align-items: center
+    text-align: right
+
+.email-info
+    font-size: 40px
+    font-weight: 500
+    color: $white
+    padding-bottom: 20px
+.footer-descr
+    font-size: 18px
+    font-weight: 400
+    color: $white
+.footer-description_app
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.8);
+.footer-above
+    display: flex
+    justify-content: space-between
+    width: 100%
+.footer_year, .footer_politic
+    padding-top: 20px
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    font-weight: 400
+    color: rgba(255, 255, 255, 0.75);
+    align-items: center
+.footer_politic
+    gap: 30px
+.footer_year
+    gap: 12px
+
+
+.footer_year-dot
+    width: 1px
+    height: 1px
+    background: rgba(255, 255, 255, 0.75);
+.app-footer
+    background: rgba(31, 31, 31, 0.6);
